@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 30px auto;
+}
+
+.logo {
+    padding: 5px;
+    background-color: var(--white);
+    border-radius: 100%;
+    font-family: "Red Hat Display";
+    color: var(--black);
+    animation: landing .5s;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 25vw;
+}
+
+.listItem {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: var(--font-bold);
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    transition: .5s ease all;
+}
+
+.listItem:hover{
+    border-bottom: 3px solid var(--white);
+}
+
+
+.listItem:nth-child(1) {
+    animation: landing .6s;
+}
+
+.listItem:nth-child(2) {
+    animation: landing 1s;
+}
+
+.listItem:nth-child(3) {
+    animation: landing 1.3s;
+}
+
+
+@keyframes landing {
+    0% {
+        transform: translateY(-30px);
+        opacity: .5;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        margin: 30px 0;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listItem {
+        margin-bottom: 10px;
+        width: 50vw;
+        text-align: center;
+    }
+}
