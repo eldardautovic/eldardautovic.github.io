@@ -10,13 +10,13 @@ const AboutMe = () => {
                 <div className={style.line}></div>
 
                 <p className={style.paragraph}>
-                    I am a programmer which passion is Web Development. I've been drawn by IoT
+                    I am a programmer which passion is Web Development. I&apos;ve been drawn by IoT
                     since I was a child. Learning new things every day is my main drive to work
                     because everything in programming is a variable but only the learning aspect 
                     is constant. Working in a team has lead me to believe I depend on others very
                     much and I just love working in teams which makes me a great team player.
                     Everything I do is self taught due to my passion and love I have for programming.
-                    I believe in the quote: "When you do something you love, it isn't a job it's fun."
+                    I believe in the quote: &quot;When you do something you love, it isn&apos;t a job it&apos;s fun.&quot;
                     and I try to live by it.
                 </p>
                 <div className={style.secondLine}></div>
