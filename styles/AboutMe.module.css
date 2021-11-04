@@ -32,7 +32,7 @@
 
 .rightSide {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     width: 550px;
     list-style-type: none;
