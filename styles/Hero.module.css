@@ -69,7 +69,7 @@
 }
 
 .linkedin {
-    color: rgb(87, 111, 219);
+    color: var(--white);
 }
 
 @keyframes landing {
