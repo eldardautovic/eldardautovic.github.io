@@ -1,0 +1,161 @@
+.container {
+    width: 90vw;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 50px;
+}
+
+.line {
+    width: 20vw;
+    height: 5px;
+    background-color: var(--white);
+    margin: 15px 0;
+}
+
+.secondLine {
+    width: 40vw;
+    height: 2px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+
+.paragraph {
+    width: 40vw;
+    text-align: justify;
+    font-size: 18px;
+    opacity: .7;
+}
+
+.rightSide {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 550px;
+    list-style-type: none;
+    gap: 30px;
+    height: 0;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    background-color: transparent;
+    border: 2px solid rgba(126, 50, 202, 0.466);
+    border-radius: 2px;
+}
+
+.itemHeader {
+    font-size: 55px;
+    color: var(--purple);
+}
+.itemParagraph {
+    font-size: 20px;
+}
+
+.itemParagraph:nth-child(2) {
+    width: 100px;
+    text-align: center;
+}
+
+.informationList {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    color: rgba(255, 255, 255, 0.705);
+    list-style-type: none;
+}
+
+
+.informationItem{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.informationItem h1 {
+    font-size: 17px;
+    font-weight: var(--font-regular);
+    margin-bottom: 10px;
+}
+
+.informationItem h1 span {
+    font-weight: var(--font-bold);
+    color: rgba(255, 255, 255, 0.794);
+}
+
+.button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--purple);
+    border-radius: 2px;
+    font-size: 17px;
+    transition: .8s ease all;
+}
+
+.button:hover{
+    background-color: rgb(134, 55, 212);
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .paragraph {
+        width: 100%;
+    }
+
+    .rightSide{
+        margin-top: 30px;
+        justify-content: left;
+        width: 350px;
+    }
+
+    .listItem{
+        width: 150px;
+        height: 100px;
+    }
+
+    .listItem:nth-child(1),
+    .listItem:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .itemHeader {
+        font-size: 40px;
+    }
+
+    .itemParagraph {
+        font-size: 15px;
+    }
+
+    .informationList {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .informationList h1 {
+        font-size: 15px;
+    }
+
+    .secondLine {
+        width: 100%;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+
+}
