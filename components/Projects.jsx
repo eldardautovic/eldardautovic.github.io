@@ -71,7 +71,7 @@ const Projects = () => {
       <div className={style.line}></div>
       <div className={style.projects}>
         {work.map((el) => {
-          return <Project content={el} />;
+          return <Project key={el.id} content={el} />;
         })}
       </div>
     </div>

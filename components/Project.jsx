@@ -14,11 +14,21 @@ const Project = ({ content }) => {
       </div>
       <div className={style.buttons}>
         {content.demoUrl != null && (
-          <a target="_blank" href={content.demoUrl} className={style.demo}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={content.demoUrl}
+            className={style.demo}
+          >
             Demo
           </a>
         )}
-        <a target="_blank" href={content.repoUrl} className={style.repo}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={content.repoUrl}
+          className={style.repo}
+        >
           Repo
         </a>
       </div>
