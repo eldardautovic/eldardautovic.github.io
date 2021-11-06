@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+
+.container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heart {
+  display: inline-block;
+  color: var(--purple);
+  animation: move 1.5s infinite;
+  font-size: 24px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: var(--font-regular);
+  font-family: "Cutive Mono";
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-5px);
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: translateY(0px);
+    transform: scale(1);
+  }
+}
