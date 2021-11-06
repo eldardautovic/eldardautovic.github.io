@@ -66,7 +66,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={style.container}>
+    <div id="mywork" className={style.container}>
       <h1 className={style.header}>My projects</h1>
       <div className={style.line}></div>
       <div className={style.projects}>

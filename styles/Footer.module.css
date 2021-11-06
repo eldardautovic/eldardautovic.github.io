@@ -1,21 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
-
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: 30px;
+  min-height: 20vh;
+  background-color: rgb(24, 15, 24);
 }
 
 .heart {
   display: inline-block;
   color: var(--purple);
   animation: move 1.5s infinite;
-  font-size: 24px;
+  font-size: 16px;
+}
+
+.collaboration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 20px;
 }
 
 .header {
-  font-size: 20px;
-  font-weight: var(--font-regular);
-  font-family: "Cutive Mono";
+  font-size: 15px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  color: rgb(139, 139, 139);
+  margin-bottom: 30px;
+}
+
+.collabHeader {
+  font-size: 30px;
+}
+
+.button {
+  padding: 5px;
+  background-color: var(--purple);
+  border-radius: 2px;
 }
 
 @keyframes move {
