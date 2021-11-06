@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={style.collaboration}>
         <h1 className={style.collabHeader}>Interested in collaboration?</h1>
         <button className={style.button}>
-          <a href="mailto:dautoviceldar20@gmail.com">Let's talk.</a>
+          <a href="mailto:dautoviceldar20@gmail.com">Let&apos;s talk.</a>
         </button>
       </div>
       <h1 className={style.header}>
