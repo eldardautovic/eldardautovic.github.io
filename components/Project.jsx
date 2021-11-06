@@ -9,7 +9,7 @@ const Project = ({ content }) => {
       <h1 className={style.stackHeader}>Tech stack: </h1>
       <div className={style.stack}>
         {content.techStack.map((el) => {
-          return <h5>{el}</h5>;
+          return <h5 key={el.id}>{el.name}</h5>;
         })}
       </div>
       <div className={style.buttons}>

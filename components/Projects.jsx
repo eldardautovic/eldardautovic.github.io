@@ -59,7 +59,11 @@ const Projects = () => {
       name: "The Hub",
       description:
         "My first ever Fullstack project to display my latest projects.",
-      techStack: ["HTML", "CSS", "Vue.js"],
+      techStack: [
+        { id: 1, name: "HTML" },
+        { id: 2, name: "CSS" },
+        { id: 3, name: "Vue.js" },
+      ],
       repoUrl: "https://github.com/eldardautovic/showtrackr",
       demoUrl: "https://eldarshub.netlify.app/",
     },
