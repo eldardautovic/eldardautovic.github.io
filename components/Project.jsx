@@ -2,14 +2,14 @@ import style from "../styles/Project.module.css";
 
 const Project = ({ content }) => {
   return (
-    <div className={style.container} key={content.id}>
+    <div className={style.container}>
       <h1 className={style.header}>{content.name}</h1>
       <div className={style.line}></div>
       <p className={style.description}>{content.description}</p>
       <h1 className={style.stackHeader}>Tech stack: </h1>
       <div className={style.stack}>
         {content.techStack.map((el) => {
-          return <h5 key={el.id}>{el.name}</h5>;
+          return <h5 key={el}>{el}</h5>;
         })}
       </div>
       <div className={style.buttons}>
